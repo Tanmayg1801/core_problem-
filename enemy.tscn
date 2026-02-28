@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cqjcm0i733611"]
+
+[ext_resource type="Texture2D" uid="uid://bejiu7ta0wa60" path="res://icon.svg" id="1_7p1mj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_md0e3"]
+
+[node name="Enemy" type="CharacterBody2D" unique_id=1454534032]
+collision_layer = 4
+collision_mask = 6
+motion_mode = 1
+wall_min_slide_angle = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=806935090]
+position = Vector2(177, 110)
+scale = Vector2(0.15625003, 0.15625001)
+texture = ExtResource("1_7p1mj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1988882714]
+position = Vector2(177, 110)
+shape = SubResource("RectangleShape2D_md0e3")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1054417737]
+debug_enabled = true
+
+[node name="Timer" type="Timer" parent="." unique_id=730067296]
