@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://f3n8wtydb5sf"]
+
+[ext_resource type="Texture2D" uid="uid://bejiu7ta0wa60" path="res://icon.svg" id="1_agfs1"]
+[ext_resource type="Script" uid="uid://uileo1cn02t2" path="res://scripts/character.gd" id="1_rkhd4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_agfs1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rkhd4"]
+size = Vector2(3.75, 20)
+
+[node name="Character" type="CharacterBody2D" unique_id=2128519682]
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("1_rkhd4")
+
+[node name="AnimatedSprite2D" type="Sprite2D" parent="." unique_id=1532986378]
+position = Vector2(0, 0.4999988)
+scale = Vector2(0.15624999, 0.13281249)
+texture = ExtResource("1_agfs1")
+
+[node name="CharacterCollision" type="CollisionShape2D" parent="." unique_id=910084662]
+shape = SubResource("CapsuleShape2D_agfs1")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=75784319]
+
+[node name="AttackCollision" type="Node" parent="." unique_id=1726638773]
+
+[node name="AttackUp" type="Area2D" parent="AttackCollision" unique_id=759692179]
+collision_layer = 0
+collision_mask = 4
+
+[node name="AttackUpCollision" type="CollisionShape2D" parent="AttackCollision/AttackUp" unique_id=441189018]
+position = Vector2(1.4210855e-14, -17)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_rkhd4")
+
+[node name="AttackDown" type="Area2D" parent="AttackCollision" unique_id=1940975492]
+position = Vector2(0, 12)
+collision_layer = 0
+collision_mask = 4
+
+[node name="AttackDownCollision" type="CollisionShape2D" parent="AttackCollision/AttackDown" unique_id=1358793650]
+position = Vector2(0, 5)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_rkhd4")
+
+[node name="AttackLeft" type="Area2D" parent="AttackCollision" unique_id=1002647213]
+position = Vector2(-12, 0)
+collision_layer = 0
+collision_mask = 4
+
+[node name="AttackLeftCollision" type="CollisionShape2D" parent="AttackCollision/AttackLeft" unique_id=513401019]
+shape = SubResource("RectangleShape2D_rkhd4")
+
+[node name="AttackRight" type="Area2D" parent="AttackCollision" unique_id=293589818]
+position = Vector2(12, 0)
+collision_layer = 0
+collision_mask = 4
+
+[node name="AttackRightCollision" type="CollisionShape2D" parent="AttackCollision/AttackRight" unique_id=708722674]
+shape = SubResource("RectangleShape2D_rkhd4")
