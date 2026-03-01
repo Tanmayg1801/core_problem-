@@ -59,12 +59,8 @@ It's a race against time, heat, and gravity. You are the only thing standing bet
 
 1. Clone the repo:
 bash
-git clone https://github.com/[Your-Username]/core-problem.git
-
-
-
-
-2. Open the project in your game engine.
+git clone https://github.com/Tanmayg1801/core-problem.git
+2. Open the project in Godot game engine.
 3. Press *Play* and save the world.
 
 ---
