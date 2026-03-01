@@ -1,4 +1,4 @@
-# ☄️ core problem!
+# ☄️ Core Problem!
 
 *Something has pierced the crust.* A mysterious object is plummeting toward the center of the Earth, shattering the mantle and dragging alien invaders in its wake. As the planet's chosen guardian, you must descend through the layers of the Earth to stop the descent before it’s too late.
 
