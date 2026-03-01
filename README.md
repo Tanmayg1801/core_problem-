@@ -8,7 +8,7 @@ It's a race against time, heat, and gravity. You are the only thing standing bet
 
 ## 🕹️ Gameplay
 
-*core problem!* is a fast-paced, 2D top-down "Doom-style" action survival game built for a 48-hour game jam.
+*Core Problem!* is a fast-paced, 2D top-down "Doom-style" action survival game built for a 48-hour game jam.
 
 * *Aggressive Combat:* Switch between your blade and ancient magic to clear the path.
 * *Depth-Based Difficulty:* Survive waves of enemies as you move closer to the Earth's core.
@@ -61,4 +61,7 @@ git clone https://github.com/Tanmayg1801/core-problem.git
 2. Open the project in Godot game engine.
 3. Press *Play* and save the world.
 
+OR
+
+Play here on itch.io!: https://tanmayg1801.itch.io/core-problem
 ---
